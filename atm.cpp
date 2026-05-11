@@ -1,13 +1,10 @@
 #include<iostream>
-#include<windows.h>
 using namespace std;
 int main()
 {
     int  balance = 1000,withdraw,deposit,password=1234;
     cout<<"Welcome to ATM Machine"<<endl;
-    Sleep(2000);
     cout<<"Please Insert Your Card"<<endl;
-    Sleep(2000);
     int input_password;
     int attempts=0;
     while(attempts<3)
@@ -34,14 +31,12 @@ if(attempts==3 )
     cout<<"4. exit\n";
 
     int choice;
-    Sleep(2000);
     cout<<"Enter Your Choice : ";
     cin>>choice;
 
     switch(choice)
     {
         case 1:
-        Sleep(2000);
         cout<<"Enter Your Paasword : ";
         int input_password;
         cin>>input_password;
@@ -55,7 +50,6 @@ if(attempts==3 )
         }
         break;
         case 2:
-        Sleep(2000);
         cout<<"Enter Your password: ";
         cin>>input_password;
         if(input_password==password)
@@ -79,7 +73,6 @@ if(attempts==3 )
     }
         break;
     case 3:
-        Sleep(2000);
         cout<<"Enter Your Password :";
         cin>>input_password;
         if(input_password==password)
@@ -95,11 +88,9 @@ if(attempts==3 )
         }
         break;
         case 4:
-        Sleep(2000);
         cout<<"Thank You for using our ATM Machine"<<endl;
         break;
         default:
-        Sleep(2000);
         cout<<"Invalid Choice"<<endl;
     }
         return 0;           
